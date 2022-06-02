@@ -1,1 +1,1 @@
-export const wizard = "Bluetop"
+export const wizard = "Buckersnow"

@@ -1,5 +1,7 @@
 import getclasses from "./getClasses"
+
 console.log("Ran from the index.js")
+
 getclasses()
 
 const obj = { a: "alpha", b: "bravo" }

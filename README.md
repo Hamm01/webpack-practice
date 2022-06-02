@@ -29,4 +29,18 @@ Command used
 
 # third commit for Babel configuring
 
-15 . //Developement mode edited in webpack config , its is root child in export module> mode: "development", 16. npm run build
+19. //Developement mode edited in webpack config , it is root level module> mode: "development"
+20. npm run build
+
+# Mode edited in Webpack config file
+
+21. // For developemt webpack comes with feature to watch and automaticaly compile files
+22. // Add the lines "build": "webpack --watch" instead of "build": "webpack" in package.json
+23. npm run build
+
+# Adding the webpack dev server for configuring
+
+24. npm i -D webpack-dev-server
+25. Edited the webpack config file > devServer: {static: "./dist"},
+26. edited the package.json in scripts module > "start": "webpack serve",
+27. npm start // this will start the webpack server with compiled and live reloading on changing the files
