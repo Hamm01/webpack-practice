@@ -44,3 +44,15 @@ Command used
 25. Edited the webpack config file > devServer: {static: "./dist"},
 26. edited the package.json in scripts module > "start": "webpack serve",
 27. npm start // this will start the webpack server with compiled and live reloading on changing the files
+
+# Source map changes in webpack config js
+
+28. As webpack.config.js is edited with> devtool: "source-map", // this will map the all the source files of Js that we
+    can see in web console.
+
+# Entry and output changes in Webpack config js
+
+29. Webpack config file is edited with entry and output module, the entry is used for SRC folder for JS and output is used
+    by webpack to provide compiled files to that particular folder
+30. npm run build
+31. npm start
