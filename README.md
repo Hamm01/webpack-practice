@@ -28,3 +28,5 @@ Command used
 18. npm run build // Tranispiling of code will done using babel rc
 
 # third commit for Babel configuring
+
+15 . //Developement mode edited in webpack config , its is root child in export module> mode: "development", 16. npm run build
