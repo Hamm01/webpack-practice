@@ -53,6 +53,16 @@ Command used
 # Entry and output changes in Webpack config js
 
 29. Webpack config file is edited with entry and output module, the entry is used for SRC folder for JS and output is used
-    by webpack to provide compiled files to that particular folder
+    by webpack to provide compiled files to that particular folder "in our case public folder with bundle.js file"
 30. npm run build
 31. npm start
+
+# Developement and production mode settings for webpack
+
+32. In package.json we used the variable with webpack in build >"build": "NODE_ENV=production webpack --watch" //Removing the --watch is necssary during time of production deploy
+33. then creating the new variable in webpack.config.js> const mode = process.env.NODE_ENV === "production" ? "production" : "developement" and setting the mode in module exports to mode
+    // We can set the production or developemnt mode in package.json
+34. npm i -D win-node-env // run this script as sometimes that node_env variable doesnot work
+35. npm run build // this will run the webpack in production mode and bundle js is minimized mode
+36. npm run build-dev // this will run in devlopement mode not minimized version of bundlejs
+37. npm start
